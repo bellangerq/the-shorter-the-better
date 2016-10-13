@@ -1,0 +1,15 @@
+h1 {
+  color: $dark-grey;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.3;
+  span {
+    display: block;
+    @media (max-width: 767px) {
+      display: inline;
+    }
+  }
+  @media (max-width: 767px) {
+    font-size: 32px;
+  }
+}
