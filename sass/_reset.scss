@@ -44,3 +44,8 @@ table {
 input {
   outline: none;
 }
+
+*::selection {
+  background: $main-app-color;
+  color: $dark-grey;
+}

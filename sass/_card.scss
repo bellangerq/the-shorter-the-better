@@ -39,12 +39,34 @@
       border: none;
       color: $white;
       cursor: pointer;
-      display: block;
+      display: inline-block;
       font-size: 20px;
       padding: 15px 35px;
       @media (max-width: 767px) {
         width: 100%;
       }
+    }
+  }
+  .shortened-link {
+    border-bottom: 2px solid $main-app-color;
+    color: $dark-grey;
+    display: inline-block;
+    margin: 0 0 0 30px;
+    padding: 15px 0;
+    position: relative;
+    .alert-message {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+    }
+    &.active {
+      display: inline-block;
+    }
+    @media (max-width: 767px) {
+      margin: 30px 0 0 0;
     }
   }
   @media (max-width: 991px) {
