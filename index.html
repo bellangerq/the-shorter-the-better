@@ -60,8 +60,10 @@
     <!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+
 		<!-- JS -->
-		<script type="text/javascript" src=""></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 
 	</head>
 
@@ -73,14 +75,10 @@
 
 			<h1>The shorter <span>the bettr.</span></h1>
 
-			<input type="text" placeholder="Paste your URL..."/>
-			<input type="submit" value="Shorter it!" />
+			<input class="input" type="text" placeholder="Paste your URL..." value=""/>
+			<input class="button" type="submit" value="Shorter it!" />
 
-			<div class="shortened-link">http://shrtbettr/Xey73k
-
-				<div class="alert-message">Copied!</div>
-
-			</div>
+			<input class="shortened-link" value="" />
 
 		</div>
 
@@ -90,6 +88,6 @@
 			<li><a href="mailto:hello@quentin-bellanger.fr">Contact</a></li>
 		</ul>
 
-
 	</body>
+
 </html>
