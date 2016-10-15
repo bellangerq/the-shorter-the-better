@@ -1,8 +1,10 @@
 .copyright {
-  bottom: 10px;
+  bottom: -30px;
   color: $soft-grey;
   opacity: 0.2;
-  position: fixed;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
   text-align: center;
   transition-duration: 0.3s;
   width: 100%;

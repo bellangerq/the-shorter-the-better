@@ -1,5 +1,6 @@
 # Changelog
 
+* Fix copyright text
 * Handle empty field error
 * Match URL regex
 * Add jQuery animations on click
