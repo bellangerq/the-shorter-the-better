@@ -4,21 +4,23 @@ $(document).ready(function() {
 
   var shorterLink = function(link) {
 
-    var inputValue = $('.input');
+    var inputIn = $('.input');
     var shortenedLink = $('.shortened-link');
+
+    var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+    var regex = new RegExp(expression);
 
     var validMessage = 'Short URL copied ✅';
     var errorMessage = 'Wrong URL format ⛔';
 
-    if(inputValue.val() === 'hello') {
+    if(inputIn.val().match(regex)) {
 
       shortenedLink.removeClass('error');
       shortenedLink.addClass('active');
 
       shortenedLink.val(validMessage);
 
-      inputValue.val('https://goo.gl/CfZjja');
-      console.log(inputValue.val());
+      inputIn.val('https://goo.gl/CfZjja');
 
     } else {
 
@@ -27,21 +29,7 @@ $(document).ready(function() {
 
       shortenedLink.val(errorMessage);
 
-      // set shortenedLink value as error msg
-
     }
-
-    // if link is correct (get regex url), do:
-    // it should:
-    // - get submitted url
-    // - get submitted url location
-    //
-    // - pop shortened link
-    // - pop 'copied' word appear and slide top
-    //
-    // if not, do:
-    // - appear error message in shortened link
-    // - make the input border red
   };
 
   button.click(function() {
@@ -50,3 +38,15 @@ $(document).ready(function() {
 
 
 });
+
+
+// if link is correct (get regex url), do:
+// it should:
+// - get submitted url location
+//
+// - pop shortened link
+// - pop 'copied' word appear and slide top
+//
+// if not, do:
+// - appear error message in shortened link
+// - make the input border red
