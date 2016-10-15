@@ -4,49 +4,60 @@ $(document).ready(function() {
 
   var shorterLink = function(link) {
 
+    // VARIABLES
     var inputIn = $('.input');
+    var inputInVal = inputIn.val();
     var shortenedLink = $('.shortened-link');
 
     var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
     var regex = new RegExp(expression);
 
-    var validMessage = 'Short URL copied ✅';
+    var validMessage = 'URL shortened ✅';
     var errorMessage = 'Wrong URL format ⛔';
+    var emptyMessage = 'Submit URL before ⛔';
 
+
+    // CONDITION
     if(inputIn.val().match(regex)) {
 
+      // SWITCH CLASSES
       shortenedLink.removeClass('error');
       shortenedLink.addClass('active');
 
+      // CHANGE ALERT MESSAGE
       shortenedLink.val(validMessage);
 
+      // CHANGE ALERT MESSAGE
       inputIn.val('https://goo.gl/CfZjja');
+      inputIn.select();
 
-    } else {
+    } else if (inputIn.val() === ''){
 
+      // SWITCH CLASSES
       shortenedLink.removeClass('active');
       shortenedLink.addClass('error');
 
+      // CHANGE ALERT MESSAGE
+      shortenedLink.val(emptyMessage);
+
+      return;
+
+    } else {
+
+      // SWITCH CLASSES
+      shortenedLink.removeClass('active');
+      shortenedLink.addClass('error');
+
+      // CHANGE ALERT MESSAGE
       shortenedLink.val(errorMessage);
 
+      return;
     }
   };
 
+  // LAUNCH FUNCTION ON CLICK
   button.click(function() {
     shorterLink();
   })
 
-
 });
-
-
-// if link is correct (get regex url), do:
-// it should:
-// - get submitted url location
-//
-// - pop shortened link
-// - pop 'copied' word appear and slide top
-//
-// if not, do:
-// - appear error message in shortened link
-// - make the input border red

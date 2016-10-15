@@ -1,5 +1,6 @@
 # Changelog
 
+* Handle empty field error
 * Match URL regex
 * Add jQuery animations on click
 * Add shortened link design
