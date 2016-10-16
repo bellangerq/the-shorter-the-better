@@ -28,7 +28,7 @@
     margin: 30px 0 0 0;
     padding: 15px 20px;
 
-    &[type="text"] {
+    &[type="url"] {
       background: $soft-grey;
       color: $grey;
       width: calc(100% - 40px);

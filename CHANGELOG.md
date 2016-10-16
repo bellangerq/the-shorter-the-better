@@ -1,5 +1,6 @@
 # Changelog
 
+* Change input type
 * Fix copyright text
 * Handle empty field error
 * Match URL regex

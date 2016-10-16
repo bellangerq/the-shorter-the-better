@@ -122,7 +122,7 @@ h1 {
     font-size: 20px;
     margin: 30px 0 0 0;
     padding: 15px 20px; }
-    .card input[type="text"] {
+    .card input[type="url"] {
       background: #EEEEEE;
       color: #888888;
       width: calc(100% - 40px); }
