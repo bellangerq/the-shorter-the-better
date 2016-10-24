@@ -1,0 +1,19 @@
+.card
+
+  = image_tag "logo.png", class: "logo"
+
+  %h1
+    The shorter
+    %span the bettr.
+
+  %form{:method => 'post', :novalidate => "true"}
+    %input{:type => "url", :class => 'input', :placeholder => 'Paste your URL...'}
+    %input{:type => "submit", :class => 'button', :value => 'Shorter it!', :onclick => "return false"}
+    %input{:class => 'shortened-link'}
+
+  %ul.copyright
+    %li &copy; 2016
+    %li
+      Made by
+      = link_to 'Quentin', 'http://quentin-bellanger.fr', :target => '_blank'
+    %li= link_to 'Contact', 'mailto:hello@quentin-bellanger.fr'

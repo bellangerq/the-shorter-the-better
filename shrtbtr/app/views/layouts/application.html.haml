@@ -1,0 +1,46 @@
+!!!
+%html{lang: :en}
+  %head
+
+    -# Compatibility
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{content: "width=device-width, initial-scale=1", :name => "viewport"}
+    %meta{content: "width=device-width, initial-scale=1", :name => "viewport"}
+
+    -# Icons
+    %link{rel: "shortcut icon", :href => "favicon.ico"}
+    %link{rel: "apple-touch-icon", :href => "apple-touch-icon.png"}
+    %link{rel: "apple-touch-icon", :sizes => "57x57", :href => "apple-touch-icon-57x57.png"}
+    %link{rel: "apple-touch-icon", :sizes => "72x72", :href => "apple-touch-icon-72x72.png"}
+    %link{rel: "apple-touch-icon", :sizes => "76x76", :href => "apple-touch-icon-76x76.png"}
+    %link{rel: "apple-touch-icon", :sizes => "114x114", :href => "apple-touch-icon-114x114.png"}
+    %link{rel: "apple-touch-icon", :sizes => "120x120", :href => "apple-touch-icon-120x120.png"}
+    %link{rel: "apple-touch-icon", :sizes => "144x144", :href => "apple-touch-icon-144x144.png"}
+    %link{rel: "apple-touch-icon", :sizes => "152x152", :href => "apple-touch-icon-152x152.png"}
+    %link{rel: "apple-touch-icon", :sizes => "180x180", :href => "apple-touch-icon-180x180.png"}
+
+    -# SEO stuff
+    %title The Shorter the Better | Dead simple URL shortener
+    %meta{name: "description", :content => "Stop sharing awful links on social media: use this easy to use URL shortener."}
+    %meta{name: "author", :content => "Quentin Bellanger"}
+
+    -# Twitter
+    %meta{name: "twitter:card", :content => "summary"}
+    %meta{name: "twitter:creator", :content => "@bellanger_q"}
+
+
+    -# Open graph
+    %meta{propery: "og:title", :content => "The shorter the better | Dead simple URL shortener"}
+    %meta{propery: "og:description", :content => "Stop sharing awful links on social media: use this easy to use URL shortener."}
+    %meta{propery: "og:url", :content => "http://shrtbtr.com"}
+    %meta{propery: "og:image", :content => "og-image.jpg"}
+    %meta{propery: "og:type", :content => "website"}
+
+    -# JS & CSS links
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  %body
+    = yield
