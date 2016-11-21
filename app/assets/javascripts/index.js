@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
+  // LAUNCH MAIN FUNCTION ON CLICK
   var button = $('.button');
+  button.click(function() {
+    shorterLink();
+  })
 
   var shorterLink = function(link) {
 
@@ -28,7 +32,7 @@ $(document).ready(function() {
       shortenedLink.val(validMessage);
 
       // CHANGE ALERT MESSAGE
-      inputIn.val('https://goo.gl/CfZjja');
+      inputIn.val('http://bit.ly/2gDjkoe');
       inputIn.select();
 
     } else if (inputIn.val() === ''){
@@ -53,11 +57,11 @@ $(document).ready(function() {
 
       return;
     }
+
+    // COPY SHORT URL TO CLIPBOARD: https://clipboardjs.com/
+    var shorturl = new Clipboard('.button');
   };
 
-  // LAUNCH FUNCTION ON CLICK
-  button.click(function() {
-    shorterLink();
-  })
+
 
 });

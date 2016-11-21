@@ -6,6 +6,10 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 
 * Try it out! [The shorter the better](http://shrtbtr.com).
 * Questions? Send me an email: [hello@quentin-bellanger.fr](mailto:hello@quentin-bellanger.fr)
-* Like this project? [Share the word]()!
+* Like this project? [Spread the word]()!
 
 ![The shorter the better | Dead simple URL shortener](http://i.imgur.com/ltMVeRf.jpg)
+
+## Local web server
+
+Run `bin/rails server`

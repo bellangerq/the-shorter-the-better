@@ -1,5 +1,6 @@
 # Changelog
 
+* Create link model
 * Setup rails app
 * Include clipboard.js
 * Change input type

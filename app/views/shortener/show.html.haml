@@ -3,12 +3,12 @@
   = image_tag "logo.png", class: "logo"
 
   %h1
-    The shorter
-    %span the bettr.
+    The show
+    %span action.
 
   %form{:method => 'post', :novalidate => "true"}
-    %input{:type => "url", :class => 'input', :placeholder => 'Paste your URL...'}
-    %input{:type => "submit", :class => 'button', :value => 'Shorter it!', :onclick => "return false"}
+    %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => 'Paste your URL...'}
+    %input{:type => "submit", :class => 'button', :value => 'Shorter it!', :data => {:clipboard => {:target => '#shorturl'}}, :onclick => "return false"}
     %input{:class => 'shortened-link'}
 
   %ul.copyright
