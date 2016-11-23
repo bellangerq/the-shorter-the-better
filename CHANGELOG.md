@@ -1,5 +1,6 @@
 # Changelog
 
+* Clean app
 * Translate app
 * Add sharing link helper
 * Create link model

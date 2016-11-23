@@ -22,12 +22,12 @@
 en:
   # HELPERS #
   helpers:
-    author_url: http://quentin-bellanger.fr
-    mailto_url: mailto:hello@quentin-bellanger.fr
+    author_url: 'http://quentin-bellanger.fr'
+    mailto_url: 'mailto:hello@quentin-bellanger.fr'
     meta:
-      title: The Shorter the Better | Dead simple URL shortener
-      description: Stop sharing awful links on social media: use this easy to use URL shortener.
-    root_url: http://shrtbtr.com
+      title: 'The Shorter the Bettr | Dead simple URL shortener'
+      description: 'Stop sharing awful links on social media: use this easy to use URL shortener'
+    root_url: 'http://shrtbtr.com'
     sharing_message: |
       The Shorter the Bettr, a dead simple URL shortener ✂️ %{root_url}
 
@@ -43,17 +43,6 @@ en:
           share: Share
         made_by: Made by
         placeholder: Paste your URL...
-        span: the bettr
-        title: The shorter
-        value: Shorter it!
-      # SHOW #
-      show:
-        copyright:
-          author: Quentin
-          contact: Contact
-          share: Share
-        made_by: Made by
-        placeholder: Paste your URL...
-        span: the bettr
+        span: the Bettr
         title: The shorter
         value: Shorter it!
