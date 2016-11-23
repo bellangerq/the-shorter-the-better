@@ -1,5 +1,6 @@
 # Changelog
 
+* Add sharing link helper
 * Create link model
 * Setup rails app
 * Include clipboard.js

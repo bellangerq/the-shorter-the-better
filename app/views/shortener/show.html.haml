@@ -3,8 +3,8 @@
   = image_tag "logo.png", class: "logo"
 
   %h1
-    The show
-    %span action.
+    The shorter
+    %span the bettr.
 
   %form{:method => 'post', :novalidate => "true"}
     %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => 'Paste your URL...'}
@@ -12,8 +12,8 @@
     %input{:class => 'shortened-link'}
 
   %ul.copyright
-    %li &copy; 2016
     %li
       Made by
       = link_to 'Quentin', 'http://quentin-bellanger.fr', :target => '_blank'
     %li= link_to 'Contact', 'mailto:hello@quentin-bellanger.fr'
+    %li= link_to 'Share', share_link, :target => '_blank'
