@@ -1,5 +1,6 @@
 # Changelog
 
+* Translate app
 * Add sharing link helper
 * Create link model
 * Setup rails app

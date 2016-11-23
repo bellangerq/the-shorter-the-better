@@ -1,9 +1,19 @@
 module ApplicationHelper
+
   def root_url
     I18n.t('helpers.root_url')
   end
 
-  def share_link
+  def mailto_url
+    I18n.t('helpers.mailto_url')
+  end
+
+  def author_url
+    I18n.t('helpers.author_url')
+  end
+
+
+  def share_url
     'https://twitter.com/home?status=' + share_message
   end
 

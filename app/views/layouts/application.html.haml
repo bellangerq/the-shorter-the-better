@@ -21,8 +21,8 @@
     %link{rel: "apple-touch-icon", :sizes => "180x180", :href => "apple-touch-icon-180x180.png"}
 
     -# SEO stuff
-    %title The Shorter the Better | Dead simple URL shortener
-    %meta{name: "description", :content => "Stop sharing awful links on social media: use this easy to use URL shortener."}
+    %title= t('helpers.meta.title')
+    %meta{name: "description", :content => t('helpers.meta.description')}
     %meta{name: "author", :content => "Quentin Bellanger"}
 
     -# Twitter
@@ -31,8 +31,8 @@
 
 
     -# Open graph
-    %meta{propery: "og:title", :content => "The shorter the better | Dead simple URL shortener"}
-    %meta{propery: "og:description", :content => "Stop sharing awful links on social media: use this easy to use URL shortener."}
+    %meta{propery: "og:title", :content => t('helpers.meta.title')}
+    %meta{propery: "og:description", :content => t('helpers.meta.description')}
     %meta{propery: "og:url", :content => "http://shrtbtr.com"}
     %meta{propery: "og:image", :content => "og-image.jpg"}
     %meta{propery: "og:type", :content => "website"}
