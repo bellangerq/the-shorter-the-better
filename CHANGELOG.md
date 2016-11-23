@@ -1,5 +1,6 @@
 # Changelog
 
+* Regenerate good controller
 * Clean app
 * Translate app
 * Add sharing link helper

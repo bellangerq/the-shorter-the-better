@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'shortener#new'
+  resources :shorteners
+
+  root 'shorteners#new'
 
 end
