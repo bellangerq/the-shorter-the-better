@@ -1,0 +1,25 @@
+.card
+
+  = image_tag "logo.png", class: "logo"
+
+  %h1
+    = t('views.shortener.new.title')
+    %span= t('views.shortener.new.span')
+
+  %table
+    %thead
+      %tr
+        %th Given URL
+        %th Count
+    %tbody
+    - @shortener.each do |s|
+      %tr
+        %th= link_to s.given_url, shortener_path(s)
+        %th= s.count
+
+  %ul.copyright
+    %li
+      = t('views.shortener.new.made_by')
+      = link_to t('views.shortener.new.copyright.author'), author_url, :target => '_blank'
+    %li= link_to t('views.shortener.new.copyright.contact'), mailto_url
+    %li= link_to t('views.shortener.new.copyright.share'), share_url, :target => '_blank'

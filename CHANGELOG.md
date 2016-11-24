@@ -1,5 +1,6 @@
 # Changelog
 
+* Add show, create and index actions
 * Regenerate good controller
 * Clean app
 * Translate app

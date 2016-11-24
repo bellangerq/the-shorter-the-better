@@ -1,8 +1,29 @@
 class ShortenersController < ApplicationController
+
+  def index
+    @shortener = Shortener.all
+  end
+
+  def show
+    @shortener = Shortener.find(params[:id])
+  end
+
   def new
   end
 
   def create
-    render plain: params[:shortener].inspect
+    @shortener = Shortener.new(shortener_params)
+
+    if @shortener.save
+      redirect_to @shortener
+    else
+      render 'new'
+    end
+  end
+
+  private
+
+  def shortener_params
+    params.require(:shortener).permit(:given_url)
   end
 end

@@ -6,9 +6,7 @@
     = t('views.shortener.new.title')
     %span= t('views.shortener.new.span')
 
-  = form_for :shortener, {url: shorteners_path} do |f|
-    = f.url_field :given_url
-    = f.submit
+  %p= @shortener.given_url
 
   -# %form{:method => 'post', :novalidate => "true"}
   -#   %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => t('views.shortener.new.placeholder')}
