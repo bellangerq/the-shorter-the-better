@@ -1,4 +1,7 @@
 class ShortenersController < ApplicationController
+  include ApplicationHelper
+
+  helper_method :short_url
 
   def index
     @shortener = Shortener.all
@@ -6,9 +9,6 @@ class ShortenersController < ApplicationController
 
   def show
     @shortener = Shortener.find(params[:id])
-  end
-
-  def new
   end
 
   def create
@@ -21,9 +21,18 @@ class ShortenersController < ApplicationController
     end
   end
 
+  def short_url
+    root_url + '/' + slug
+  end
+
   private
 
   def shortener_params
     params.require(:shortener).permit(:given_url)
   end
+
+  def slug
+    6.times.map { [*'0'..'9', *'a'..'z'].sample }.join
+  end
+
 end

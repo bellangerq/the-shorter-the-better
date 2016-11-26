@@ -1,5 +1,7 @@
 # Changelog
 
+* Generate random slug on create
+* Create layout for views
 * Add show, create and index actions
 * Regenerate good controller
 * Clean app
