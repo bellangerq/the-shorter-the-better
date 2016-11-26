@@ -1,5 +1,6 @@
 # Changelog
 
+* Create layout for views
 * Generate random slug on create
 * Create layout for views
 * Add show, create and index actions

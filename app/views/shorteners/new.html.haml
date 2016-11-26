@@ -1,23 +1,8 @@
-.card
+= form_for :shortener, {url: shorteners_path} do |f|
+  = f.url_field :given_url
+  = f.submit
 
-  = image_tag "logo.png", class: "logo"
-
-  %h1
-    = t('views.shortener.new.title')
-    %span= t('views.shortener.new.span')
-
-  = form_for :shortener, {url: shorteners_path} do |f|
-    = f.url_field :given_url
-    = f.submit
-
-  -# %form{:method => 'post', :novalidate => "true"}
-  -#   %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => t('views.shortener.new.placeholder')}
-  -#   %input{:type => "submit", :class => 'button', :value => t('views.shortener.new.value'), :data => {:clipboard => {:target => '#shorturl'}}, :onclick => "return false"}
-  -#   %input{:class => 'shortened-link'}
-
-  %ul.copyright
-    %li
-      = t('views.shortener.new.made_by')
-      = link_to t('views.shortener.new.copyright.author'), author_url, :target => '_blank'
-    %li= link_to t('views.shortener.new.copyright.contact'), mailto_url
-    %li= link_to t('views.shortener.new.copyright.share'), share_url, :target => '_blank'
+-# %form{:method => 'post', :novalidate => "true"}
+-#   %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => t('views.shortener.new.placeholder')}
+-#   %input{:type => "submit", :class => 'button', :value => t('views.shortener.new.value'), :data => {:clipboard => {:target => '#shorturl'}}, :onclick => "return false"}
+-#   %input{:class => 'shortened-link'}

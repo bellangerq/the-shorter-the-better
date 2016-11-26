@@ -1,21 +1,6 @@
-.card
+%input{:type => "url", :class => 'input', :id => 'shorturl', :value => @shortener.given_url}
 
-  = image_tag "logo.png", class: "logo"
-
-  %h1
-    = t('views.shortener.new.title')
-    %span= t('views.shortener.new.span')
-
-  %p= @shortener.given_url
-
-  -# %form{:method => 'post', :novalidate => "true"}
-  -#   %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => t('views.shortener.new.placeholder')}
-  -#   %input{:type => "submit", :class => 'button', :value => t('views.shortener.new.value'), :data => {:clipboard => {:target => '#shorturl'}}, :onclick => "return false"}
-  -#   %input{:class => 'shortened-link'}
-
-  %ul.copyright
-    %li
-      = t('views.shortener.new.made_by')
-      = link_to t('views.shortener.new.copyright.author'), author_url, :target => '_blank'
-    %li= link_to t('views.shortener.new.copyright.contact'), mailto_url
-    %li= link_to t('views.shortener.new.copyright.share'), share_url, :target => '_blank'
+-# %form{:method => 'post', :novalidate => "true"}
+-#   %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => t('views.shortener.new.placeholder')}
+-#   %input{:type => "submit", :class => 'button', :value => t('views.shortener.new.value'), :data => {:clipboard => {:target => '#shorturl'}}, :onclick => "return false"}
+-#   %input{:class => 'shortened-link'}

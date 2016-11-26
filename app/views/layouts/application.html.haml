@@ -43,4 +43,19 @@
     = csrf_meta_tags
 
   %body
-    = yield
+    .card
+
+      = link_to image_tag('logo.png', class: "logo"), root_url
+
+      %h1
+        = t('views.shortener.new.title')
+        %span= t('views.shortener.new.span')
+
+      = yield
+
+      %ul.copyright
+        %li
+          = t('views.shortener.new.made_by')
+          = link_to t('views.shortener.new.copyright.author'), author_url, :target => '_blank'
+        %li= link_to t('views.shortener.new.copyright.contact'), mailto_url
+        %li= link_to t('views.shortener.new.copyright.share'), share_url, :target => '_blank'
