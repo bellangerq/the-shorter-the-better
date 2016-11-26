@@ -1,8 +1,4 @@
 = form_for :shortener, {url: shorteners_path} do |f|
-  = f.url_field :given_url
-  = f.submit
-
--# %form{:method => 'post', :novalidate => "true"}
--#   %input{:type => "url", :class => 'input', :id => 'shorturl', :placeholder => t('views.shortener.new.placeholder')}
--#   %input{:type => "submit", :class => 'button', :value => t('views.shortener.new.value'), :data => {:clipboard => {:target => '#shorturl'}}, :onclick => "return false"}
--#   %input{:class => 'shortened-link'}
+  = f.url_field :given_url, :class => 'input', :id => 'shorturl', :placeholder => t('views.shortener.new.placeholder'), :required => true, :novalidate => 'true'
+  = f.submit :class => 'button', :value => t('views.shortener.new.value'), :data => {:clipboard => {:target => '#shorturl'}} #, :onclick => "return false"
+  %input{:class => 'shortened-link'}
