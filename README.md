@@ -10,6 +10,9 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 
 ![The shorter the better | Dead simple URL shortener](http://i.imgur.com/ltMVeRf.jpg)
 
-## Local web server
+## Setup
+
+### Local web server
 
 Run `bin/rails server`
+Go to `localhost:3000`
