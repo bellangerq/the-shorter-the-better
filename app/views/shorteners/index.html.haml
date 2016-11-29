@@ -8,5 +8,5 @@
   - @shortener.each do |s|
     %tr
       %th= link_to s.given_url, shortener_path(s)
-      %th= short_url
+      %th= short_url(s)
       -# %th= s.count

@@ -1,5 +1,6 @@
 # Changelog
 
+* Save the slug
 * Handle errors on new view
 * Update README.me
 * Create layout for views
