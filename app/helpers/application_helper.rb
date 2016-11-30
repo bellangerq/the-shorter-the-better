@@ -1,9 +1,5 @@
 module ApplicationHelper
 
-  def root_url
-    I18n.t('helpers.root_url')
-  end
-
   def mailto_url
     I18n.t('helpers.mailto_url')
   end

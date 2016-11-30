@@ -3,10 +3,10 @@
     %tr
       %th Given URL
       %th Short URL
-      -# %th Count
+      %th Count
   %tbody
-  - @shortener.each do |s|
+  - @shorteners.each do |s|
     %tr
       %th= link_to s.given_url, shortener_path(s)
-      %th= short_url(s)
-      -# %th= s.count
+      %th= s_url(s.slug)
+      %th= s.count
