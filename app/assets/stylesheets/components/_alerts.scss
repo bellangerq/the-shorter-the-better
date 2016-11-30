@@ -1,0 +1,33 @@
+.alert-error {
+  background: rgba($error-color, 0.1);
+  border-bottom: 2px solid $error-color;
+  border-radius: 0;
+  color: $dark-grey;
+  display: none;
+  margin: 0 0 0 30px;
+  padding: 15px 20px;
+  text-align: center;
+  width: 35%;
+  @media (max-width: 767px) {
+    margin: 30px 0 0 0;
+    width: calc(100% - 40px);
+  }
+}
+
+.alert-success {
+  background: rgba($valid-color, 0.1);
+  border-bottom: 2px solid $valid-color;
+  border-radius: 0;
+  color: $dark-grey;
+  float: right;
+  font-size: 20px;
+  margin: 0;
+  padding: 15px 20px;
+  text-align: center;
+  width: 35%;
+  @media (max-width: 767px) {
+    float: none;
+    margin: 30px 0 0 0;
+    width: calc(100% - 40px);
+  }
+}

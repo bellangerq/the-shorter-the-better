@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // VARIABLES
   var longUrl = $('.long-url');
-  var infoBox = $('.shortened-link');
+  var alertError = $('.alert-error');
 
   var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
   var regex = new RegExp(expression);
@@ -21,23 +21,19 @@ $(document).ready(function() {
 
     // INFOBOX CONDITIONS
     if(longUrl.val() === '') {
-
-      infoBox.removeClass('active');
-      infoBox.addClass('error');
-      infoBox.val(emptyMessage);
-
+      alertError.show();
+      alertError.val(emptyMessage);
       return;
+
     }
 
     if(longUrl.val().match(regex)) {
-
-      infoBox.hide();
+      alertError.hide();
 
     } else {
 
-      infoBox.removeClass('active');
-      infoBox.addClass('error');
-      infoBox.val(errorMessage);
+      alertError.show();
+      alertError.val(errorMessage);
 
       return;
     }
