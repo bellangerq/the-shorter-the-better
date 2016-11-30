@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Update Javascript errors
 * Create the redirect method in controller
 * Save the slug
 * Handle errors on new view
