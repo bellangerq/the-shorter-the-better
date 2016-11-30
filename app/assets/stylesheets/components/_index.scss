@@ -1,0 +1,37 @@
+.shorteners-index {
+  overflow-y: auto;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    tr, td, th {
+      border: 1px solid $dark-grey;
+      padding: 10px;
+    }
+    td:not(:last-child) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 50%;
+      max-width: 0;
+      @media (max-width: 767px){
+        max-width: none;
+      }
+    }
+    td:last-child {
+      text-align: center;
+    }
+    tr:hover {
+      background: lighten($grey, 40%);
+    }
+    thead {
+      margin: 0 0 20px 0;
+      th {
+        background: $main-app-color;
+        color: $white;
+        margin: 0 0 20px 0;
+        text-align: center;
+      }
+    }
+  }
+}

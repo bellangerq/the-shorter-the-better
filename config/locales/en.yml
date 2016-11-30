@@ -20,7 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  # HELPERS #
   helpers:
     author_url: 'http://quentin-bellanger.fr'
     mailto_url: 'mailto:hello@quentin-bellanger.fr'
@@ -31,11 +30,12 @@ en:
     sharing_message: |
       The Shorter the Bettr, a dead simple URL shortener ✂️ %{root_url}
 
-  # VIEWS #
   views:
-    # SHORTENER #
     shortener:
-      # NEW #
+      index:
+        count: Count
+        given_url: Given URL
+        short_url: Short URL
       new:
         copyright:
           author: Quentin

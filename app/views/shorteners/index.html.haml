@@ -1,12 +1,13 @@
-%table
-  %thead
-    %tr
-      %th Given URL
-      %th Short URL
-      %th Count
-  %tbody
-  - @shorteners.each do |s|
-    %tr
-      %th= link_to s.given_url, shortener_path(s)
-      %th= s_url(s.slug)
-      %th= s.count
+.shorteners-index
+  %table
+    %thead
+      %tr
+        %th= t('views.shortener.index.given_url')
+        %th= t('views.shortener.index.short_url')
+        %th= t('views.shortener.index.count')
+    %tbody
+    - @shorteners.each do |s|
+      %tr
+        %td= link_to s.given_url, shortener_path(s)
+        %td= link_to s_url(s.slug), s_url(s.slug)
+        %td= s.count

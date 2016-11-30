@@ -6,7 +6,7 @@ class ShortenersController < ApplicationController
   # helper_method :short_url
 
   def index
-    @shorteners = Shortener.all
+    @shorteners = Shortener.last(10)
   end
 
   def show

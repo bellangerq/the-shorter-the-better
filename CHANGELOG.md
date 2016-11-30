@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Design index page
 * Clean stylesheets
 * Update Javascript errors
 * Create the redirect method in controller
