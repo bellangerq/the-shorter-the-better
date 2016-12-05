@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Add index pagination
 * Design index page
 * Clean stylesheets
 * Update Javascript errors

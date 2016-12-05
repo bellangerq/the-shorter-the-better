@@ -2,11 +2,11 @@ class ShortenersController < ApplicationController
   include ApplicationHelper
 
   http_basic_authenticate_with name: "quentin", password: "nitneuq", except: [:new, :show, :create, :redirect]
-
-  # helper_method :short_url
+  # http_basic_authenticate_with name: ENV['AUTHENT_USER'], password: ENV['AUTHENT_PASSWORD'], except: [:new, :show, :create, :redirect]
 
   def index
-    @shorteners = Shortener.last(10)
+    @shorteners = Shortener.all
+    @shorteners = Shortener.paginate(:page => params[:page], :per_page => 10)
   end
 
   def show
