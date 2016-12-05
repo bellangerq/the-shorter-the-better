@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Resize card layout for mobile
 * Style pagination
 * Auto select short link
 * Add index pagination

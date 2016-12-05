@@ -1,5 +1,7 @@
 .pagination {
+  line-height: 2em;
   margin: 20px auto 0 auto;
+  text-align: center;
   .current {
     border: 1px solid $main-app-color;
     color: $main-app-color;

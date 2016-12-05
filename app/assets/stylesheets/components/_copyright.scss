@@ -26,6 +26,10 @@
     }
   }
   @media (max-width: 767px) {
+    bottom: -30px;
+    left: 0;
+    position: absolute;
     text-align: center;
+    transform: none;
   }
 }

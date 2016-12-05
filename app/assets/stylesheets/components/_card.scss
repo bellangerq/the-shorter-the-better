@@ -20,8 +20,13 @@
     }
   }
   @media (max-width: 767px) {
+    left: 0;
+    margin: 30px auto 40px;
     padding: 30px;
+    position: relative;
     text-align: center;
+    top: 0;
+    transform: none;
     width: 70%;
   }
 }
