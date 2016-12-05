@@ -12,6 +12,8 @@ $(document).ready(function() {
 
   var shorterButton = $('.shorter-it-button');
 
+  var shortURLInput = $('.short-url');
+
   // LAUNCH FUNCTION
   shorterButton.click(function() {
     shorterLink();
@@ -39,5 +41,7 @@ $(document).ready(function() {
     }
 
   };
+
+  shortURLInput.select();
 
 });
