@@ -6,7 +6,7 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 - [ ] Set `.env` variables
 - [ ] Sort index by count
 - [ ] Copy short URL on pageload
-- [ ] Style pagination
+- [ ] Copy short URL on pageload
 
 ## About
 

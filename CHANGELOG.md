@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Style pagination
 * Auto select short link
 * Add index pagination
 * Design index page

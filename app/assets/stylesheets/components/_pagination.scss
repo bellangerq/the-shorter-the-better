@@ -1,0 +1,19 @@
+.pagination {
+  margin: 20px auto 0 auto;
+  .current {
+    border: 1px solid $main-app-color;
+    color: $main-app-color;
+    margin: 0 5px;
+    padding: 3px 8px;
+  }
+  a {
+    background: $main-app-color;
+    border: 1px solid $main-app-color;
+    color: $white;
+    padding: 3px 8px;
+    text-decoration: none;
+  }
+  .disabled {
+    display: none;
+  }
+}
