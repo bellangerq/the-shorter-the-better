@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Open shortened link in new tab
 * Clean code
 * Add requirements in README.md
 * Add .env file with environment variables

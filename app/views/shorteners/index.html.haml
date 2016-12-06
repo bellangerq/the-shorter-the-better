@@ -9,7 +9,7 @@
     - @shorteners.each do |s|
       %tr
         %td= link_to s.given_url, shortener_path(s)
-        %td= link_to s_url(s.slug), s_url(s.slug)
+        %td= link_to s_url(s.slug), s_url(s.slug), :target => '_blank'
         %td= s.count
 
 = will_paginate @shorteners
