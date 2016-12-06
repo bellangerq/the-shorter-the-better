@@ -22,7 +22,7 @@ $(document).ready(function() {
   var shorterLink = function() {
 
     // INFOBOX CONDITIONS
-    if(longUrl.val() === '') {
+    if(longUrl.val() === '' || typeof(longUrl.val()) === 'undefined') {
       alertError.show();
       alertError.val(emptyMessage);
       return;
@@ -42,6 +42,7 @@ $(document).ready(function() {
 
   };
 
+  // Select input text
   shortURLInput.select();
 
 });

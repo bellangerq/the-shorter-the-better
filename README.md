@@ -3,9 +3,8 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 
 ## TO DO
 
-- [ ] Set `.env` variables
 - [ ] Sort index by count
-- [ ] Copy short URL on pageload
+- [ ] Allow regex to bypass the 'http://'
 
 ## About
 
@@ -30,3 +29,7 @@ bin/rails server
 ```
 
 Visit [`localhost:3000`](http://localhost:3000)
+
+## Future features
+
+- [ ] Copy short URL to clipboard on page load

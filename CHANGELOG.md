@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Clean code
 * Add requirements in README.md
 * Add .env file with environment variables
 * Resize card layout for mobile

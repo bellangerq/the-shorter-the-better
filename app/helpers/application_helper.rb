@@ -1,13 +1,12 @@
 module ApplicationHelper
 
   def mailto_url
-    I18n.t('helpers.mailto_url')
+    'mailto:hello@quentin-bellanger.fr'
   end
 
   def author_url
-    I18n.t('helpers.author_url')
+    'http://quentin-bellanger.fr'
   end
-
 
   def share_url
     'https://twitter.com/home?status=' + share_message

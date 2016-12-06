@@ -15,11 +15,6 @@ class ShortenersController < ApplicationController
   def redirect
     @shortener = Shortener.where(slug: params[:slug]).first
 
-    # Add count on every show action
-    # @shortener.count += 1
-    # @shortener.save!
-
-    # increment! directly save in database
     @shortener.increment!(:count)
 
     redirect_to @shortener.given_url
@@ -27,8 +22,6 @@ class ShortenersController < ApplicationController
 
   def create
     @shortener = Shortener.new(shortener_params)
-    # @shortener.slug = slug
-    # @shortener.created_by = current_user
 
     if @shortener.save
       redirect_to shortener_url(@shortener)
