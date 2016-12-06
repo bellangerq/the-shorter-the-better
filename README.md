@@ -17,6 +17,11 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 
 ## Setup
 
+### Requirements
+
+* Ruby `2.3.1`
+* Rails `5.0.0.1`
+
 ### Local web server
 
 Run
