@@ -1,8 +1,7 @@
 class ShortenersController < ApplicationController
   include ApplicationHelper
 
-  http_basic_authenticate_with name: "quentin", password: "nitneuq", except: [:new, :show, :create, :redirect]
-  # http_basic_authenticate_with name: ENV['AUTHENT_USER'], password: ENV['AUTHENT_PASSWORD'], except: [:new, :show, :create, :redirect]
+  http_basic_authenticate_with name: ENV['AUTHENT_USER'], password: ENV['AUTHENT_PASSWORD'], except: [:new, :show, :create, :redirect]
 
   def index
     @shorteners = Shortener.all

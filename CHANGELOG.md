@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Add .env file with environment variables
 * Resize card layout for mobile
 * Style pagination
 * Auto select short link
