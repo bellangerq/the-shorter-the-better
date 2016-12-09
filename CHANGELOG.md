@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Sort links by count in index
 * Open shortened link in new tab
 * Clean code
 * Add requirements in README.md

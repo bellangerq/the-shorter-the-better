@@ -22,10 +22,10 @@
 en:
   helpers:
     meta:
-      title: 'The Shorter the Bettr | Dead simple URL shortener'
-      description: 'Stop sharing awful links on social media: use this easy to use URL shortener'
+      title: 'The shorter the bettr | Dead simple URL shortener'
+      description: 'Stop sharing awful and infinite links on social media: use this easy to use URL shortener'
     sharing_message: |
-      The Shorter the Bettr, a dead simple URL shortener ✂️ %{root_url}
+      The shorter the bettr: dead simple URL shortener ✂️ %{root_url}
 
   views:
     shortener:
@@ -40,7 +40,7 @@ en:
           share: Share
         made_by: Made by
         placeholder: Paste your URL...
-        span: the Bettr
+        span: the bettr
         title: The shorter
         value: Shorter it!
       show:
