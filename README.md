@@ -34,5 +34,5 @@ script/deploy
 
 ## To do
 
-- [ ] Fix wrong pattern on Safari
-- [ ] 
+- [ ] Fix wrong input pattern on Safari
+- [ ] Copy short URL to clipboard
