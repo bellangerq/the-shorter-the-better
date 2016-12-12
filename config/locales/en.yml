@@ -28,6 +28,14 @@ en:
       The shorter the bettr: dead simple URL shortener ✂️ %{root_url}
 
   views:
+    error:
+      home: Back home
+      internal_server_error:
+        subtitle: Sorry to hear that...
+        title: "500: server error 😐"
+      not_found:
+        subtitle: Sorry to hear that...
+        title: "404: not found 😐"
     shortener:
       index:
         count: Count

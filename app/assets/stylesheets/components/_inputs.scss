@@ -21,7 +21,6 @@ input {
 
   &[type="submit"] {
     background: $main-app-color;
-    border: none;
     border-bottom: 2px solid $main-app-color;
     color: $white;
     cursor: pointer;
@@ -31,5 +30,26 @@ input {
     @media (max-width: 767px) {
       width: 100%;
     }
+  }
+}
+
+button {
+  background: $main-app-color;
+  border: none;
+  border-bottom: 2px solid $main-app-color;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Droid Serif', serif;
+  font-size: 20px;
+  margin: 30px auto 0 auto;
+  padding: 15px 35px;
+  text-decoration: none;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }

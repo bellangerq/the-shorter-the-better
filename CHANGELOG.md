@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Create error pages
 * Fix Firefox border-collapse
 * Fix empty Safari input bug
 * Sort links by count in index
