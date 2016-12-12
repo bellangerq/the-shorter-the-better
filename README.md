@@ -36,3 +36,4 @@ script/deploy
 
 - [ ] Fix wrong input pattern on Safari
 - [ ] Copy short URL to clipboard
+- [x] Fix table border on Firefox

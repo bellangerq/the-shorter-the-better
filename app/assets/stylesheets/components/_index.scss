@@ -3,6 +3,8 @@
   overflow-x: auto;
 
   table {
+    // Firefox issue on table borders
+    border-collapse:separate;
     width: 100%;
     tr, td, th {
       border: 1px solid $dark-grey;
