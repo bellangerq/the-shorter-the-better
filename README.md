@@ -31,3 +31,8 @@ Go to [`localhost:3000`](http://localhost:3000)
 ```sh
 script/deploy
 ```
+
+## To do
+
+- [ ] Fix wrong pattern on Safari
+- [ ] 

@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Fix empty Safari input bug
 * Sort links by count in index
 * Open shortened link in new tab
 * Clean code

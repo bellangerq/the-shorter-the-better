@@ -19,30 +19,28 @@ $(document).ready(function() {
     shorterLink();
   })
 
-  var shorterLink = function() {
+  var shorterLink = function(e) {
 
     // INFOBOX CONDITIONS
     if(longUrl.val() === '' || typeof(longUrl.val()) === 'undefined') {
+      console.log('Input is empty');
       alertError.show();
       alertError.val(emptyMessage);
       return;
 
-    }
-
-    if(longUrl.val().match(regex)) {
-      alertError.hide();
-
-    } else {
-
+    } else if (!(longUrl.val().match(regex))) {
+      console.log('Input doesn\'t mach the regex');
       alertError.show();
       alertError.val(errorMessage);
-
       return;
+
+    } else {
+      alertError.hide();
     }
 
   };
 
-  // Select input text
+  // SELECT INPUT TEXT
   shortURLInput.select();
 
 });
