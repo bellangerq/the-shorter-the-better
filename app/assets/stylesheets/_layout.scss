@@ -1,6 +1,6 @@
 body {
   background: $dark-grey;
-  background-image: url('background.jpg');
+  background-image: asset-url('background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Droid Serif', serif;
