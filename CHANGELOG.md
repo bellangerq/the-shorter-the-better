@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Split head in partial
 * Create error pages
 * Fix Firefox border-collapse
 * Fix empty Safari input bug
