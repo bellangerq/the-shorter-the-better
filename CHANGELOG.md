@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Add custom fonts (2)
 * Disabled info box input
 * Delete /s in short url
 * Add custom fonts

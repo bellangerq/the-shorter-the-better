@@ -10,15 +10,15 @@ $valid-color: #1BC978;
 $error-color: #C0392B;
 
 // FONTS
-@font-face {
-  font-family: 'DroidSerif';
-  src: url(font-path('DroidSerif.ttf')) format('ttf');
-}
+// @font-face {
+//   font-family: 'DroidSerif';
+//   src: font-url('DroidSerif.ttf') format('ttf');
+// }
 
-@font-face {
-  font-family: 'DroidSerifBold';
-  src: url(font-path('DroidSerifBold.ttf')) format('ttf');
-}
+// @font-face {
+//   font-family: 'DroidSerifBold';
+//   src: url(font-path('DroidSerifBold.ttf')) format('ttf');
+// }
 
 $font-primary: 'DroidSerif', Gergia, serif;
 $font-primary-bold: 'DroidSerifBold', Gergia, serif;
