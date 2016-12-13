@@ -1,6 +1,8 @@
+require 'uri'
+
 class Shortener < ApplicationRecord
 
-  validates :given_url, presence: true
+  validates :given_url, presence: true, :format => {:with => URI.regexp}
 
   before_save :set_slug
 

@@ -20,6 +20,10 @@ class ShortenersController < ApplicationController
     redirect_to @shortener.given_url
   end
 
+  def new
+    @shortener = Shortener.new
+  end
+
   def create
     @shortener = Shortener.new(shortener_params)
 

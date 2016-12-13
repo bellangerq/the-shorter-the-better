@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Add server side validation
 * Fix javascript input errors code (support all browsers)
 * Add custom fonts (2)
 * Disabled info box input

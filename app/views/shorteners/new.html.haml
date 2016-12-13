@@ -1,4 +1,5 @@
-= form_for :shortener, {url: shorteners_path} do |f|
-  = f.url_field :given_url, :class => 'long-url', :placeholder => t('views.shortener.new.placeholder'), :required => true
+= form_for @shortener, {url: shorteners_path} do |f|
+  -# = f.object.errors.full_messages.join(', ')
+  = f.text_field :given_url, :class => 'long-url', :placeholder => t('views.shortener.new.placeholder')
   = f.submit :class => 'shorter-it-button', :value => t('views.shortener.new.value')
   %input{:class => 'alert-error', :disabled => true}
