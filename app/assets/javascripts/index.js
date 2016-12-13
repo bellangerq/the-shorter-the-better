@@ -10,29 +10,27 @@ $(document).ready(function() {
   var errorMessage = 'Wrong URL format ⛔';
   var emptyMessage = 'Submit URL before ⛔';
 
-  var shorterButton = $('.shorter-it-button');
+  var shorterForm = $('form.new_shortener');
 
   var shortURLInput = $('.short-url');
 
   // LAUNCH FUNCTION
-  shorterButton.click(function() {
-    shorterLink();
+  shorterForm.submit(function(e){
+    return validateUrl();
   })
 
-  var shorterLink = function(e) {
+  var validateUrl = function() {
 
     // INFOBOX CONDITIONS
     if(longUrl.val() === '' || typeof(longUrl.val()) === 'undefined') {
-      console.log('Input is empty');
       alertError.show();
       alertError.val(emptyMessage);
-      return;
+      return false;
 
     } else if (!(longUrl.val().match(regex))) {
-      console.log('Input doesn\'t mach the regex');
       alertError.show();
       alertError.val(errorMessage);
-      return;
+      return false;
 
     } else {
       alertError.hide();

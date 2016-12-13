@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Fix javascript input errors code (support all browsers)
 * Add custom fonts (2)
 * Disabled info box input
 * Delete /s in short url
