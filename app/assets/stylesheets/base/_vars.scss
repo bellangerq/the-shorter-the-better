@@ -1,3 +1,4 @@
+// COLORS
 $dark-grey: #373D42;
 $grey: #888888;
 $soft-grey: #EEEEEE;
@@ -7,3 +8,20 @@ $main-app-color: #1BC978;
 
 $valid-color: #1BC978;
 $error-color: #C0392B;
+
+// FONTS
+@font-face {
+  font-family: 'DroidSerif';
+  src: url(font-path('DroidSerif.ttf')) format('ttf');
+}
+
+@font-face {
+  font-family: 'DroidSerifBold';
+  src: url(font-path('DroidSerifBold.ttf')) format('ttf');
+}
+
+$font-primary: 'DroidSerif', Gergia, serif;
+$font-primary-bold: 'DroidSerifBold', Gergia, serif;
+
+// RADIUS
+$radius-primary: 5px;

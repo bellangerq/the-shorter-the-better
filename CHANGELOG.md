@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Add custom fonts
 * Split head in partial
 * Create error pages
 * Fix Firefox border-collapse

@@ -1,8 +1,8 @@
 input {
   border: none;
   border-bottom: 2px solid $soft-grey;
-  border-radius: 5px;
-  font-family: 'Droid Serif', serif;
+  border-radius: $radius-primary;
+  font-family: $font-primary;
   font-size: 20px;
   padding: 15px 20px;
 
@@ -37,10 +37,10 @@ button {
   background: $main-app-color;
   border: none;
   border-bottom: 2px solid $main-app-color;
-  border-radius: 5px;
+  border-radius: $radius-primary;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Droid Serif', serif;
+  font-family: $font-primary;
   font-size: 20px;
   margin: 30px auto 0 auto;
   padding: 15px 35px;
