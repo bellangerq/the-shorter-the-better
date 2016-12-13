@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Delete /s in short url
 * Add custom fonts
 * Split head in partial
 * Create error pages

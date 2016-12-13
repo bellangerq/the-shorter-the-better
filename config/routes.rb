@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :shorteners
 
-  get "/s/:slug" => "shorteners#redirect", as: :s
+  get "/:slug" => "shorteners#redirect", as: :s
 
   # redirect errors
   match "/404", :to => "errors#not_found", :via => :all
