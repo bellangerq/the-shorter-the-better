@@ -3,6 +3,6 @@ body {
   background-image: asset-url('background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Droid Serif', serif;
+  font-family: $font-primary;
   height: 100%;
 }

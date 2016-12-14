@@ -35,6 +35,7 @@ script/deploy
 ## To do
 
 - [x] Fix table border on Firefox
-- [ ] Fix wrong input pattern on Safari
+- [x] Fix wrong input pattern on Safari
+- [ ] Use :invalid selector to trigger errors
 - [ ] Copy short URL to clipboard
 - [ ] Import custom fonts

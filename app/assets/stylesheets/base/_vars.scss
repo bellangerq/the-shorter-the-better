@@ -10,18 +10,7 @@ $valid-color: #1BC978;
 $error-color: #C0392B;
 
 // FONTS
-// @font-face {
-//   font-family: 'DroidSerif';
-//   src: font-url('DroidSerif.ttf') format('ttf');
-// }
-
-// @font-face {
-//   font-family: 'DroidSerifBold';
-//   src: font-url('DroidSerifBold.ttf') format('ttf');
-// }
-
-$font-primary: 'DroidSerif', Gergia, serif;
-$font-primary-bold: 'DroidSerifBold', Gergia, serif;
+$font-primary: Georgia, serif;
 
 // RADIUS
 $radius-primary: 5px;
