@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Add reset script
 * Fix client-side error message bug
 * Remove custom font
 * Add server side validation

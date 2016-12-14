@@ -32,10 +32,16 @@ Go to [`localhost:3000`](http://localhost:3000)
 script/deploy
 ```
 
+### Reset Heroku database
+
+```sh
+script/reset
+```
+
 ## To do
 
 - [x] Fix table border on Firefox
 - [x] Fix wrong input pattern on Safari
 - [x] Add web safe fonts
-- [ ] Use :invalid selector to trigger errors
+- [x] Use :invalid selector to trigger errors
 - [ ] Copy short URL to clipboard

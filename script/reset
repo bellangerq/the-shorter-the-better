@@ -1,0 +1,2 @@
+heroku pg:reset DATABASE --confirm shrtbtr
+heroku run rake db:migrate
