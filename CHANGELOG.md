@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Fix client-side error message bug
 * Remove custom font
 * Add server side validation
 * Fix javascript input errors code (support all browsers)

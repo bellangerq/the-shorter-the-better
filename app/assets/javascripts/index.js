@@ -7,8 +7,7 @@ $(document).ready(function() {
   var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
   var regex = new RegExp(expression);
 
-  var errorMessage = 'Wrong URL format ⛔';
-  var emptyMessage = 'Submit URL before ⛔';
+  var errorMessage = 'Submit valid URL ⛔';
 
   var shorterForm = $('form.new_shortener');
 
@@ -22,12 +21,7 @@ $(document).ready(function() {
   var validateUrl = function() {
 
     // INFOBOX CONDITIONS
-    if(longUrl.val() === '' || typeof(longUrl.val()) === 'undefined') {
-      alertError.show();
-      alertError.val(emptyMessage);
-      return false;
-
-    } else if (!(longUrl.val().match(regex))) {
+    if((longUrl.val() === '') || (typeof(longUrl.val()) === 'undefined') || !(longUrl.val().match(regex))) {
       alertError.show();
       alertError.val(errorMessage);
       return false;
