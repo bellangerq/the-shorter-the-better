@@ -1,5 +1,6 @@
 # CHANGELOG
 
+* Add mobile color
 * Fix client-side error message bug (2)
 * Add reset script
 * Fix client-side error message bug
