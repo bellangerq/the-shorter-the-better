@@ -8,13 +8,14 @@ $(document).ready(function() {
   var regex = new RegExp(expression);
 
   var errorMessage = 'Submit valid URL ⛔';
-
   var shorterForm = $('form.new_shortener');
-
   var shortURLInput = $('.short-url');
 
   // LAUNCH FUNCTION
   shorterForm.submit(function(e){
+    if(longUrl.is(':invalid')){
+    	console.log('invalid');
+    }
     return validateUrl();
   })
 

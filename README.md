@@ -24,8 +24,6 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 script/server
 ```
 
-Go to [`localhost:3000`](http://localhost:3000)
-
 ### Deploy on production
 
 ```sh
