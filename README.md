@@ -5,7 +5,7 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 
 ## About
 
-* Read the story behind the project on [this blog post](http://shrtbtr.com).
+* Read the story behind the project on [this blog post](https://medium.com/p/ed755cd7c004).
 * Questions? Send me an email: [hello@quentin-bellanger.fr](mailto:hello@quentin-bellanger.fr)
 * Like this project? [Spread the word](https://twitter.com/home?status=The Shorter the Bettr, a dead simple URL shortener ✂️ http://shrtbtr.com)!
 
