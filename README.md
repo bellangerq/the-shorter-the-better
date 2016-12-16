@@ -42,4 +42,5 @@ script/reset
 - [x] Fix wrong input pattern on Safari
 - [x] Add web safe fonts
 - [x] Use :invalid selector to trigger errors
+- [ ] Check for uniqueness
 - [ ] Copy short URL to clipboard
