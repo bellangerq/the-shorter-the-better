@@ -7,7 +7,7 @@ Stop sharing awful links on social media: use this easy to use URL shortener. Ju
 
 * Read the story behind the project on [this blog post](https://medium.com/p/ed755cd7c004).
 * Questions? Send me an email: [hello@quentin-bellanger.fr](mailto:hello@quentin-bellanger.fr)
-* Like this project? [Spread the word](https://twitter.com/home?status=The Shorter the Bettr, a dead simple URL shortener ✂️ http://shrtbtr.com)!
+* Like this project? [Spread the word](https://twitter.com/intent/tweet?text=The%20Shorter%20the%20Better%2C%20a%20dead%20simple%20URL%20shortener%20made%20by%20%40bellanger_q%20%E2%9C%82%EF%B8%8F%20http%3A%2F%2Fshrtbtr.com&source=webclient)!
 
 ![The shorter the better | Dead simple URL shortener](http://i.imgur.com/YhXG2zh.png)
 
@@ -35,12 +35,3 @@ script/deploy
 ```sh
 script/reset
 ```
-
-## To do
-
-- [x] Fix table border on Firefox
-- [x] Fix wrong input pattern on Safari
-- [x] Add web safe fonts
-- [x] Use :invalid selector to trigger errors
-- [ ] Check for uniqueness
-- [ ] Copy short URL to clipboard
