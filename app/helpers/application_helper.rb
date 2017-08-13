@@ -1,18 +1,14 @@
 module ApplicationHelper
 
   def mailto_url
-    'mailto:hello@quentin-bellanger.fr'
+    'mailto:hello@quentin-bellanger.com'
   end
 
   def author_url
-    'http://quentin-bellanger.fr'
+    'http://quentin-bellanger.com'
   end
 
   def share_url
-    'https://twitter.com/home?status=' + share_message
-  end
-
-  def share_message
-    I18n.t('helpers.sharing_message', root_url: root_url)
+    'https://github.com/bellangerq/the-shorter-the-better'
   end
 end
