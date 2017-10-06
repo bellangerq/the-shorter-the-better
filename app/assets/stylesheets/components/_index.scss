@@ -5,6 +5,7 @@
   table {
     // Firefox issue on table borders
     border-collapse:separate;
+    text-align: left;
     width: 100%;
     tr, td, th {
       border: 1px solid $dark-grey;
